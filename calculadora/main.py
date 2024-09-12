@@ -1,4 +1,4 @@
-from menu import Menu #Conecta a main a Classe, geralmente, um arquivo para cada Classe nova, para conectar mais de uma classe
+from control import Menu #Conecta a main a Classe, geralmente, um arquivo para cada Classe nova, para conectar mais de uma classe
 # Executa as transações entre classes
 
 if __name__ == '__main__':

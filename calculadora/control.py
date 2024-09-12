@@ -18,11 +18,23 @@ class Menu:
               '\n4. Multiplicar' +
               '\n5. Potencia' +
               '\n6. Raiz' +
-              '\n7. Tabuada')
+              '\n7. Tabuada' +
+              '\n8. Exercício 1' +
+              '\n9. Exercício 2' +
+              '\n10. Exercício 3' +
+              '\n11. Exercício 4' +
+              '\n12. Exercício 5' +
+              '\n13. Exercício 6' +
+              '\n14. Exercicio 7' +
+              '\n15. Exercicio 8' +
+              '\n16. Exercício 9')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro numero: '))
         self.num2 = int(input('Informe o segundo numero: '))
+
+    def coletarr(self):
+        self.num1 = int(input('Informe um número: '))
 
     def operacao(self):
 
@@ -62,6 +74,37 @@ class Menu:
                 print(f'A tabuada do {self.num1} é: {self.opera.tabuada(self.num1)}')
                 print(f'A tabuada do {self.num2} é: {self.opera.tabuada(self.num2)}')
 
+            elif self.opcao == 8:
+                print(self.opera.exercicio01())
+
+            elif self.opcao == 9:
+                print(self.opera.exercicio02())
+
+            elif self.opcao == 10:
+                print(f'A soma dos números de 1 a 100 é: {self.opera.exercicio03()}')
+
+            elif self.opcao == 11:
+                print(f'Os múltiplos de 5 de 1 até 50 são: {self.opera.exercicio04()}')
+
+            elif self.opcao == 12:
+                self.coletarr()
+                print(f'O número é: {self.opera.exercicio05(self.num1)}')
+
+            elif self.opcao == 13:
+                self.coletarr()
+                print(f'O número é: {self.opera.exercicio06(self.num1)}')
+
+            elif self.opcao == 14:
+                self.coletarr()  # Chamando o input
+                print(f'A tabuada do {self.num1} é: {self.opera.tabuada(self.num1)}')
+
+            elif self.opcao == 15:
+                self.coletarr()
+                print(self.opera.exercicio08(self.num1))
+
+            elif self.opcao == 16:
+                self.coletarr()
+                print(self.opera.exercicio09(self.num1))
 
 
 
