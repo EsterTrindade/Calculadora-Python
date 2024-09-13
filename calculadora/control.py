@@ -27,7 +27,11 @@ class Menu:
               '\n13. Exercício 6' +
               '\n14. Exercicio 7' +
               '\n15. Exercicio 8' +
-              '\n16. Exercício 9')
+              '\n16. Exercício 9' +
+              '\n17. Exercício 10'+
+              '\n18. Exercício 11'+
+              '\n19. Exercício 12'+
+              '\n20. Exercício 13')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro numero: '))
@@ -105,6 +109,20 @@ class Menu:
             elif self.opcao == 16:
                 self.coletarr()
                 print(self.opera.exercicio09(self.num1))
+
+            elif self.opcao == 17:
+                print(self.opera.exercicio10())
+
+            elif self.opcao == 18:
+                self.coletarr()
+                print(self.opera.exercicio11(self.num1))
+
+            elif self.opcao == 19:
+                print(self.opera.exercicio12())
+
+            elif self.opcao == 20:
+                self.coletarr()
+                print(self.opera.exercicio13(self.num1))
 
 
 

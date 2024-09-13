@@ -1,10 +1,11 @@
 import math
 
+
 class Operacao:
 
-    #Métodos
+    # Métodos
 
-    def __init__(self): #Construtor
+    def __init__(self):  # Construtor
         self.num1 = 0
         self.num2 = 0
 
@@ -17,15 +18,15 @@ class Operacao:
         return self.num1 + self.num2
 
     def subtrair(self, num1, num2):
-        self.coletar(num1,  num2)
+        self.coletar(num1, num2)
         return self.num1 - self.num2
 
     def multiplicar(self, num1, num2):
-        self.coletar(num1,  num2)
+        self.coletar(num1, num2)
         return self.num1 * self.num2
 
     def dividir(self, num1, num2):
-        self.coletar(num1,  num2)
+        self.coletar(num1, num2)
         if self.num2 <= 0:
             return "Impossível dividir!"
         else:
@@ -44,27 +45,27 @@ class Operacao:
         return math.sqrt(num)
 
     def exercicio01(self):
-        msg = "" #Variável acumuladora
-        for i in range(1,11,1):
+        msg = ""  # Variável acumuladora
+        for i in range(1, 11, 1):
             msg += f"\n{i}"
         return msg
 
     def exercicio02(self):
         pares = ""
-        for i in range(1,21,1):
+        for i in range(1, 21, 1):
             if i % 2 == 0:
                 pares += f'\n{i}'
         return pares
 
     def exercicio03(self):
         soma = 0
-        for i in range(1,101):
+        for i in range(1, 101):
             soma += i
         return soma
 
     def exercicio04(self):
         mult = ""
-        for i in range(5,51,5):
+        for i in range(5, 51, 5):
             mult += f"\n{i}"
         return mult
 
@@ -86,18 +87,56 @@ class Operacao:
         for i in range(1, num + 1):
             print(i)
 
+    # Resolver exercício 9
     def exercicio09(self, num):
         result = ""
-        for i in range(0, num + 1):
-            result += f'\n{num + i}'
+        for i in range(1, num + 1):
+            result += f'{num} + {i} = {num + i}\n'
         return result
 
+    def exercicio10(self):
+        primo = "1\n2\n3\n5"
+        for i in range(5, 21, 1):
+            if i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
+                primo += f'\n{i}'
+        return primo
 
+    def exercicio11(self, num):
+        if num == 2 or num == 3 or num == 5:
+            return f'O {num} é primo!'
+        elif num % 2 != 0 and num % 3 != 0 and num % 5 != 0:
+            return f'O {num} é primo'
+        return f'O {num} não é primo'
 
+    # Resolver exercício 12
+    def exercicio12(self):
+        n = 6
+        if n == 0:
+            return 1
+        for i in range(1, n):
+            fat = i * i
+        return fat
 
+    def exercicio13(self, num):
+        fib = 0
+        fib1 = 1
+        for i in range(0, num):
+            fib2 = fib + fib1
+            fib = fib1
+            fib1 = fib2
+            print(fib2)
+        return fib2
 
-
-
+    #resolver exercício 14
+    def exercicio14(self, num):
+        fib = 0
+        fib1 = 1
+        for i in range(0, num):
+            fib2 = fib + fib1
+            fib = fib1
+            fib1 = fib2
+            print(fib2)
+        return fib2
 
 
 
