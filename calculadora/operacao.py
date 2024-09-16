@@ -127,7 +127,7 @@ class Operacao:
             print(fib2)
         return fib2
 
-    #resolver exercício 14
+    # Resolver exercício 14
     def exercicio14(self, num):
         fib = 0
         fib1 = 1
@@ -137,6 +137,55 @@ class Operacao:
             fib1 = fib2
             print(fib2)
         return fib2
+
+    def exercicio15(self, num):
+        soma = 0
+        for digito in str(num):
+            if digito.isdigit():
+                soma += int(digito)
+        return soma
+
+    def exercicio16(self, num):
+        for i in range(1, num):
+            if i % 2 == 0:
+                print(f'PAR:\n{i}\n')
+            else:
+                print(f'ÍMPAR:\n{i}\n')
+
+    def exercicio17(self, num):
+        for i in range(1, num):
+            if i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
+                print(f'PRIMOS:\n{i}\n')
+            else:
+                return
+
+    def exercicio18(self, num):
+        for i in range(1, num):
+            if 0 == 2:
+                return 0
+            elif i % 2 == 0:
+                print(1 + i//2)
+            else:
+                print(1 + (3*i+1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
