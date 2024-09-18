@@ -156,8 +156,6 @@ class Operacao:
         for i in range(1, num):
             if i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
                 print(f'PRIMOS:\n{i}\n')
-            else:
-                return
 
     def exercicio18(self, num):
         for i in range(1, num):
@@ -167,6 +165,43 @@ class Operacao:
                 print(1 + i//2)
             else:
                 print(1 + (3*i+1))
+
+    #19 & 20
+
+    def viceversa1(self):
+        a = 10
+        b = 20
+        if a == 10 and b == 20:
+            a = 20
+            b = 10
+        return f'Variavel A = {a} ' \
+               f'\nVarialve B = {b}'
+
+    def antecessor2(self, num):
+        return num - 1
+
+    def basealtura(self, base, altura):
+        return base * altura
+
+    def leiaidade(self, anos, meses, dias):
+        result = anos * 365 + meses * 30
+        return result
+
+    def eleitores(self, elei, votosbrancos, votosnulos, votosvalidos):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

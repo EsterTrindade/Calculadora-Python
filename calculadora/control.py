@@ -10,7 +10,6 @@ class Menu:
 
     def mostrarMenu(self):
         print('\n----- MENU -----\n\n' +
-              'Escolha umas das opções abaixo: ' +
               '\n0. Sair' +
               '\n1. Somar' +
               '\n2. Subtrair' +
@@ -28,15 +27,22 @@ class Menu:
               '\n14. Exercicio 7' +
               '\n15. Exercicio 8' +
               '\n16. Exercício 9' +
-              '\n17. Exercício 10'+
-              '\n18. Exercício 11'+
-              '\n19. Exercício 12'+
-              '\n20. Exercício 13'+
-              '\n21. Exercicio 14'+
-              '\n22. Exercício 15'+
-              '\n23. Exercício 16'+
-              '\n24. Exercício 17'+
-              '\n25. Exercício 18')
+              '\n17. Exercício 10' +
+              '\n18. Exercício 11' +
+              '\n19. Exercício 12' +
+              '\n20. Exercício 13' +
+              '\n21. Exercicio 14' +
+              '\n22. Exercício 15' +
+              '\n23. Exercício 16' +
+              '\n24. Exercício 17' +
+              '\n25. Exercício 18' +
+              '\n26. Exercício 19' +
+              '\n27. Exercício 20' +
+              '\n\n----- MENU SEGUNDA LISTA -----\n' +
+              '\n28. Exercício 1'+
+              '\n29. Exercício 2'+
+              '\n30. Exercício 3'+
+              '\n31. Exercício 4')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro numero: '))
@@ -49,7 +55,7 @@ class Menu:
 
         while self.opcao != 0:
             self.mostrarMenu()  # Chamando as opções
-            self.opcao = int(input('Escolha uma das opções acima: '))
+            self.opcao = int(input('\nEscolha uma das opções acima: '))
 
             if self.opcao == 0:
                 print('Obrigado!')
@@ -149,6 +155,21 @@ class Menu:
                 self.coletarr()
                 print(self.opera.exercicio18(self.num1))
 
+            #19 & 20
 
+            elif self.opcao == 28:
+                print(self.opera.viceversa1())
 
+            elif self.opcao == 29:
+                self.coletarr()
+                print(self.opera.antecessor2(self.num1))
 
+            elif self.opcao == 30:
+                self.coletar()
+                print(f'A área do retângulo é: {self.opera.basealtura(self.num1, self.num2)}')
+
+            elif self.opcao == 31:
+                self.anos = input("Informe sua idade em anos: ")
+                self.meses = input("Informe sua idade em meses: ")
+                self.dias = input("Informe sua idade em dias: ")
+                print(f'A sua idade em dias é: {self.opera.leiaidade(self.anos, self.meses, self.dias)}')
