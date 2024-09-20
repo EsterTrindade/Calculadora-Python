@@ -18,6 +18,7 @@ class Menu:
               '\n5. Potencia' +
               '\n6. Raiz' +
               '\n7. Tabuada' +
+              '\n\n----- MENU EXERCÍCIOS PYTHON -----\n' +
               '\n8. Exercício 1' +
               '\n9. Exercício 2' +
               '\n10. Exercício 3' +
@@ -42,7 +43,23 @@ class Menu:
               '\n28. Exercício 1'+
               '\n29. Exercício 2'+
               '\n30. Exercício 3'+
-              '\n31. Exercício 4')
+              '\n31. Exercício 4' +
+              '\n32. Exercício 5' +
+              '\n33. Exercicio 6' +
+              '\n34. Exercicio 7' +
+              '\n35. Exercício 8' +
+              '\n36. Exercício 9' +
+              '\n37. Exercício 10' +
+              '\n38. Exercício 11' +
+              '\n39. Exercício 12' +
+              '\n40. Exercicio 13' +
+              '\n41. Exercício 14' +
+              '\n42. Exercício 15' +
+              '\n43. Exercício 16' +
+              '\n44. Exercício 17' +
+              '\n45. Exercício 18' +
+              '\n46. Exercício 19' +
+              '\n47. Exercício 20')
 
     def coletar(self):
         self.num1 = int(input('Informe o primeiro numero: '))
@@ -173,3 +190,31 @@ class Menu:
                 self.meses = input("Informe sua idade em meses: ")
                 self.dias = input("Informe sua idade em dias: ")
                 print(f'A sua idade em dias é: {self.opera.leiaidade(self.anos, self.meses, self.dias)}')
+
+            elif self.opcao == 32:
+                print(self.opera.eleitores())
+
+            elif self.opcao == 33:
+                self.salario = int(input("Informe seu salário: "))
+                self.reajuste = int(input("Informe o reajuste: "))
+                print(self.opera.salarioatual(self.salario, self.reajuste))
+
+            elif self.opcao == 34:
+                self.preco = int(input("Informe o preço do carro: R$"))
+                print(self.opera.precocar(self.preco))
+
+            elif self.opcao == 35:
+                self.n1 = int(input("Informe a primeira nota: "))
+                self.n2 = int(input("Informe a segunda nota: "))
+                self.n3 = int(input("Informe a terceira nota: "))
+                print(self.opera.media(self.n1, self.n2, self.n3))
+
+            elif self.opcao == 36:
+                self.qtd = int(input("Informe a quantidade de maçãs: "))
+                print(self.opera.descontom(self.qtd))
+
+            elif self.opcao == 37:
+                self.v = int(input("Informe 10 valores: "))
+                print(self.opera.ler10(self.v))
+
+

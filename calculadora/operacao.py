@@ -187,7 +187,65 @@ class Operacao:
         result = anos * 365 + meses * 30
         return result
 
-    def eleitores(self, elei, votosbrancos, votosnulos, votosvalidos):
+    #arrumar eleitores 5
+    def eleitores(self, eleitor, brancos, nulos, validos):
+        pbrancos = 0
+        pvalidos = 0
+        pnulos = 0
+        if eleitor == brancos + validos + nulos:
+            var = pbrancos == (brancos * 100) / eleitor
+            var = pvalidos == (validos * 100) / eleitor
+            var = pnulos == (nulos * 100) / eleitor
+            print(f'Percentual de votos brancos: ", {pbrancos}%')
+            print(f'Percentual de votos brancos: ", {pvalidos}%')
+            print(f'Percentual de votos brancos: ", {pnulos}%')
+        else:
+            return "Digite novamente, o total de eleitores é invalido!"
+
+    def salarioatual(self, salario, reajuste):
+        porcent = ""
+        conta = ""
+        salarioAtual = ""
+        porcent = (reajuste / 100)
+        conta = (salario * porcent)
+        salarioAtual = salario + conta
+        return salarioAtual
+
+    def precocar(self, preco):
+        calc1 = preco * 0.28
+        calc2 = preco * 0.45
+        valor = preco + (calc1 + calc2)
+        return f'O valor final do carro é: R${valor}'
+
+    def media(self, n1, n2, n3):
+        return f'A média das notas é: {(n1 + n2 + n3) / 3}'
+
+    def descontom(self, qtd):
+        total = ""
+        if qtd < 12:
+            total = qtd * 1.30
+        else:
+            total = qtd * 1.00
+        return f'O valor total das maçãs é: R${total}'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
